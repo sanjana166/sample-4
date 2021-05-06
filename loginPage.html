@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <style>
+  .stud{
+    background-color: lightgreen;
+    color:black;
+    text-align: center;
+    font-size: large;
+    width:49.8%;
+    float:left;
+    height:auto;
+}
+.fac{
+    background-color: lightgreen;
+    color:black;
+    text-align: center;
+    font-size: large;
+    width:49.8%;
+    float:right;
+    height: auto;
+}
+.login{
+   background-color:grey;
+   color:rgb(5, 5, 5);
+   text-align: center;
+
+   
+
+}
+</style>
+
+<script src="swiggy.js"></script>
+</head>
+<body class="login">
+  <headrer >
+    <h2>Welcome to Swiggy!!!</h2>
+  </headrer>
+
+  <form  target="_blank" action="login.html" method="POST">
+  <label for="">Enter username</label>
+  <input type="text" name="username" id="username-field">
+  <br><br>
+
+  <label for="">Enter password</label>
+  <input type="password" name="username" id="pass-field">
+  <br><br>
+
+  <div id="buttons">
+      <input type="button" id="sign-up-btn" value="Sign Up" onclick="register()">
+      <input type="button" id="log-in-btn" value="Log In" onclick="login()">
+  </div>
+</form>
+</body>
+</html> 

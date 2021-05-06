@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Order</title>
+<head>
+    <script src="swiggy.js"></script>
+    
+
+<style type="text/css">
+        body{
+            background-color: lightgrey;
+            font-size: 20px;
+        }
+        
+        #student_page, #faculty_page{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px solid gray;
+            width: 75%;
+        }
+    </style>
+</head>
+<script>
+var price = 0;
+function myFunction() {
+  var x = document.getElementById("Burger").checked;
+  if(x){
+  	price = price + 50;
+  }
+  var x = document.getElementById("Pizza").checked;
+  if( x == true){
+  	price = price + 90;
+  }
+  var x = document.getElementById("French Fries").checked;
+  if( x == true){
+  	price = price + 60;
+  }
+  var x = document.getElementById("Garlic Bread").checked;
+  if( x == true){
+  	price = price + 70;
+  }
+}
+
+</script>
+<body>
+<center>
+<h1>Order!</h1>
+
+  <input type="button" id="Burger" name="color" value="Add" onclick="addBurgar()">
+  <label for="Burgar">Add Burgar to list!</label><br>
+  <input type="button" id="Pizza" name="color1" value="Add" onclick="addPizza()">
+  <label for="Pizza">Add Pizza to list!</label><br>
+  <input type="button" id="French Fries" name="color2" value="Add" onclick="addFrenchFires()">
+  <label for="French Fries">Add French Fries to list!</label><br>
+  <input type="button" id="Garlic Bread" name="color3" value="Add" onclick="addGarlicBread()">
+  <label for="Garlic Bread">Add Garlic Bread to list!</label><br>
+
+  
+  <div id="CheckOut">
+    <center>
+    <input type="button" id="check-out-btn" value="Bill" id="check-out-btn" onclick="GenerateBill()">
+        <div id="hide">
+            <h3 id="bill-amt"></h3>
+            <h4 id="thank-you"></h4>
+        </div>
+    </center>
+
+</div>
+</center>
+  
+  
+</body>
+</html>
